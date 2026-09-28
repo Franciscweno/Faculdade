@@ -1,0 +1,109 @@
+
+
+TESTE CADASTRO ALUNO/PROFESSOR
+1. Nome vazio.
+2. Nome com menos de 10 caracteres.
+3. Nome com número.
+4. CPF com menos de 11 dígitos.
+5. CPF duplicado.
+6. CEP inválido.
+7. CEP válido sem internet.
+8. Telefone com 9 dígitos.
+9. Telefone com 12 dígitos.
+10. E-mail sem @.
+11. E-mail com dois @.
+12. Sexo não selecionado.
+
+Cadastro de turma
+
+Teste:
+
+1. Curso inexistente.
+2. Disciplina inexistente.
+3. Professor inexistente.
+4. Professor já vinculado no mesmo dia e turno.
+5. Mesmo professor no mesmo dia, mas turno diferente.
+6. Mesmo professor no mesmo turno, mas dia diferente.
+7. Quantidade de vagas zero.
+8. Mensalidade zero.
+9. Mensalidade com vírgula.
+10. Mensalidade com “R$”.
+
+Cadastro de professor
+
+Teste:
+
+1. Dados pessoais válidos.
+2. Clicar em “Dados acadêmicos” e fechar a janela sem cadastrar.
+3. Tentar cadastrar professor com CPF duplicado.
+4. Data final menor que data inicial.
+5. Grau não selecionado.
+6. Instituição somente numérica.
+
+Cadastro de curso
+
+Teste:
+
+1. Nome do curso vazio.
+2. Nome menor que 5 caracteres.
+3. Carga horária vazia.
+4. Carga horária menor que 30.
+5. Curso duplicado com mesmo nome.
+6. Curso duplicado mudando maiúsculas/minúsculas.
+
+Cadastro de disciplina
+
+Teste:
+
+1. Disciplina vazia.
+2. Disciplina com número, exemplo: Matemática 1.
+3. Disciplina com menos de 5 caracteres.
+4. Disciplina duplicada.
+
+Matrícula
+
+Teste:
+
+1. Aluno inexistente.
+2. Turma inexistente.
+3. Matrícula em turma sem vaga.
+4. Mesmo aluno na mesma turma duas vezes.
+5. Mesmo aluno em duas turmas diferentes.
+6. Aluno não bolsista.
+7. Aluno bolsista com 0%.
+8. Aluno bolsista com 100%.
+9. Aluno bolsista com 101%.
+10. Cancelar matrícula ativa.
+11. Cancelar matrícula já cancelada.
+12. Cancelar matrícula com ID inexistente.
+13. Cancelar matrícula com ID não numérico.
+14. Reativar aluno depois de matrícula cancelada, criando nova matrícula.
+
+TESTE CONSULTAR ALUNO
+
+1. Deixe o campo vazio e clique na lupa.
+   Esperado: listar todas as matrículas.
+
+2. Busque ID Matrícula = 999999.
+   Esperado: erro "Nenhuma matrícula encontrada com os dados informados."
+
+3. Busque ID Aluno inexistente.
+   Esperado: mesmo erro.
+
+4. Busque ID Turma(s) inexistente.
+   Esperado: mesmo erro.
+
+5. Busque CPF com 3 números.
+   Esperado: erro pedindo exatamente 11 números.
+
+6. Busque CPF com 11 números não cadastrado.
+   Esperado: erro de matrícula não encontrada.
+
+7. Busque Status = Ativa.
+   Esperado: listar ativas ou informar que não encontrou.
+
+8. Busque Status = Cancelada.
+   Esperado: listar canceladas ou informar que não encontrou.
+
+9. Busque Status = qualquer outra palavra.
+   Esperado: erro "Para Status, digite Ativa ou Cancelada."
