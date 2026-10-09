@@ -1,0 +1,10 @@
+*.class
+venv/
+.venv/
+env/
+__pycache__/
+.idea/
+.vscode/
+*.exe
+*.o
+*.pptx
