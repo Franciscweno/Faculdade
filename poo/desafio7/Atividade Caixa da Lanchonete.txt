@@ -1,0 +1,4 @@
+Atividade: Caixa da Lanchonete
+Você foi contratado para desenvolver o sistema de caixa de uma lanchonete. O cliente pode pagar de formas diferentes, como Pix e cartão de crédito, mas o caixa precisa tratar todas do mesmo jeito: ele só quer saber que aquilo "sabe pagar um valor".
+Usando interface, crie o código que represente essa situação e mostre no Main duas formas de pagamento diferentes sendo usadas.
+Seja criativo: escolha os atributos, as mensagens e os valores que achar mais adequados.

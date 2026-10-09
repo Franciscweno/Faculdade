@@ -1,0 +1,11 @@
+O modelo espiral(Pressman (1995)) é um modelo de processo de software evolucionário que une a natureza iterativa da prototipação aos aspectos sistemáticos e controlados do modelo cascata, enfatizando no segundo quadrante da espiral a análise de riscos.
+
+O modelo de processo evolucionário é o mais adequado em função da complexidade dos requisitos, estando eles parcialmente identificados. Esse modelo permite que os requisitos parcialmente identificados sejam considerados em um primeiro incremento, permitindo um melhor entendimento do domínio do problema e a identificação de novos requisitos para incrementos posteriores. O modelo possibilita, também, a disponibilização de versões de software agregando valor ao negócio do cliente.
+
+A UML é uma linguagem visual, independente de linguagem de programação e de processo de desenvolvimento. Um processo de desenvolvimento que utilize a UML como linguagem de modelagem envolve a criação de artefatos de software gráficos, denominados de diagramas, que podem ser complementados por descrições textuais.
+
+Vale destacar que o RUP pode ser ajustado a qualquer escala de complexidade e a seleção do requisito não será tão simplista.
+
+Prioritariamente, o RUP é um modelo de processo de software para o desenvolvimento de acordo com o paradigma orientado a objetos. Esse processo tem um alto grau de formalismo, possuindo os seguintes princípios: baseado em casos de uso, centrado em arquitetura e iterativo e incremental. Enfim, se o problema for complexo, o RUP é um forte candidato a ser escolhido por algum engenheiro de software como requisito não funcional “modelo de processo de software”. O RUP possui como princípio, entre outros, ser iterativo e incremental. Iterativo porque as atividades se repetem a cada nova iteração, permitindo um melhor entendimento do negócio, ou seja, compreensão gradativa dos requisitos de software à medida que o desenvolvimento avança.
+
+A UML é uma linguagem de modelagem que permite a especificação de artefatos de software gerados nas etapas de análise e projeto de um processo de software.
