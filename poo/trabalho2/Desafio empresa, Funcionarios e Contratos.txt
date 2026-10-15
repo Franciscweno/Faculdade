@@ -1,0 +1,30 @@
+Atividade Prática: Sistema de Reembolso de Despesas Corporativas
+Contexto
+
+Uma empresa de médio porte tem funcionários que viajam a trabalho e fazem gastos com alimentação, transporte por aplicativo e hospedagem. Hoje, o departamento de RH controla esses reembolsos em uma planilha, o que gera cálculos errados, atrasos e retrabalho. A diretoria pediu um primeiro protótipo em Java que modele os funcionários, as despesas e as regras de reembolso. Esse protótipo será a base do sistema completo no futuro.
+
+Objetivo
+
+Modelar, em Java, as entidades e os comportamentos desse processo, aplicando os conceitos estudados.
+
+O que precisa ser pensado e construído
+
+1. Funcionários. Cada funcionário tem nome, departamento e salário. Pense em quais dados são obrigatórios e quais podem faltar. Um funcionário recém-contratado, por exemplo, pode ainda não ter departamento definido. Como o objeto deve ser criado em cada caso?
+
+2. Despesas. Existem diversos tipos de despesa. Todas têm data, descrição e valor, mas cada uma segue regras diferentes. Antes de escrever qualquer coisa, pergunte-se: o que é comum entre elas e o que muda? Como evitar copiar o mesmo código três vezes?
+
+3. Regras de reembolso. Cada tipo de despesa calcula o valor reembolsável de forma própria. Por exemplo, a política da empresa pode reembolsar hospedagem até um teto por noite, enquanto alimentação tem outro limite diário. Como cada tipo deve responder à pergunta “quanto eu reembolso?”
+
+4. Contratos. Algumas coisas podem ser reembolsadas ou exigem aprovação, mas não necessariamente pertencem à mesma família de classes. Por exemplo, um equipamento comprado pelo funcionário pode ser reembolsável sem ser uma despesa de viagem. Como você representaria essa capacidade sem forçar uma relação de herança que não faz sentido?
+
+5. Comportamentos. Alguns métodos devem devolver uma informação, como o total reembolsável de um relatório ou se uma despesa está dentro da política. Outros devem apenas executar uma ação, como registrar uma aprovação ou exibir um resumo na tela. Para cada método que você criar, decida e justifique por que ele devolve ou não um resultado.
+
+6. Relatório. Um funcionário acumula uma lista de despesas em um período. O sistema deve calcular o total a ser reembolsado nesse período.
+
+Entrega
+
+Um programa Java com uma classe de teste (main) que:
+
+crie pelo menos 3 funcionários e 5 despesas de tipos diferentes;
+associe as despesas aos funcionários;
+imprima um relatório de reembolso para cada funcionário.
