@@ -1,10 +1,15 @@
 body{
-    background: linear-gradient(to right, #ff7741e1, #ffcab2);
+    background-image: url('/assets/laranjeirasBackground.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    padding: 20px;
 }
 
 h3{
     padding: 20px;
-    background: linear-gradient(to right,#000000, #520000);
+    background: linear-gradient(to right, #9e3a007a, #000000);
     border-radius: 20px 20px 20px 20px;
     text-shadow: #ffa5a5;
     font-family: sans-serif;
@@ -13,7 +18,7 @@ h3{
 }
 
 .bgLinks{
-    background: linear-gradient(to right, #520000, #000000);
+    background: linear-gradient(to right, #000000 25%,  #9e3a007a);
     border-radius: 20px 50px 50px 20px;
     padding-bottom: 20px;
     padding-left: 20px;
