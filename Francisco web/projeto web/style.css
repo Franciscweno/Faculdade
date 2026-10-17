@@ -25,7 +25,15 @@ h3{
     
 }
 
-.botoeslinks{
+li{
     list-style-type: none;
     color: #ffeaea;
+    padding: 10px;
+    margin-top: 10px;
+    background:linear-gradient(to bottom, #ff6600, #ff761a, #ff8826da); 
+    width: 150px;
+    align-content: space-between;
+    font-family: "Lilita One", sans-serif;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
 }
