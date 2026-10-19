@@ -3,8 +3,14 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     max-width: 1200px;
-    /* margin: 0 auto; */
+    margin: 0 auto; 
     padding: 20px;
+    box-sizing: border-box;
+}
+
+a img {
+    max-width: 100%;
+    height: auto;
 }
 
 h3{
@@ -17,23 +23,52 @@ h3{
     display: inline-block;
 }
 
+
 .bgLinks{
     background: linear-gradient(to right, #000000 25%,  #9e3a007a);
-    border-radius: 20px 50px 50px 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+
+.bgLinks:hover{
+    background: linear-gradient(to right, #000000 30%,  #9e3a00b7);
+    transform: scale(1.01);
+}
+
+.botoeslinks{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+
 }
 
 li{
     list-style-type: none;
     color: #ffeaea;
-    padding: 10px;
     margin-top: 10px;
     background:linear-gradient(to bottom, #ff6600, #ff761a, #ff8826da); 
     width: 150px;
-    align-content: space-between;
+    min-height: 65px;
+    display: flex;
     font-family: "Lilita One", sans-serif;
     font-size: 20px;
     border-radius: 10px 10px 10px 10px;
+}
+
+.bgLinks a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffeaea;
+    padding: 10px;
 }
