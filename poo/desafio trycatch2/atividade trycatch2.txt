@@ -1,0 +1,17 @@
+Atividade: Loja Online com Produtos, Impostos e Validações
+Contexto
+Uma pequena loja online vende dois tipos de produto: físicos, que são enviados pelo correio e têm frete calculado pelo peso, e digitais, como e-books e cursos gravados, que não têm frete. A loja também vende assinaturas mensais de um serviço de streaming. A assinatura não é um produto, mas precisa de imposto calculado como os outros itens. O sistema da loja precisa calcular o valor final de cada item e impedir dados inválidos, como preço negativo ou peso zero.
+Objetivo
+Modelar as entidades da loja usando herança, interface, métodos com retorno e tratamento de exceções.
+O que precisa ser pensado e construído
+1. Produtos. Todo produto tem nome e preço. Produtos físicos têm peso, e produtos digitais têm apenas o preço. Antes de escrever o código, decida o que é comum a todos os produtos e o que é específico de cada tipo. Um método de descrição, como descricao(), deve ter o mesmo comportamento em todos os tipos ou cada tipo deve mostrar algo diferente?
+2. Frete. Um produto físico calcula frete pelo peso. Um produto digital não tem frete. Como cada classe deve responder à pergunta “quanto custa o frete?” sem que o código precise verificar o tipo do objeto com if?
+3. Impostos. A loja cobra imposto sobre produtos e sobre assinaturas. Assinaturas não são produtos, então não devem herdar de Produto. Como você representaria a capacidade de “ser tributável” sem forçar uma relação de herança que não faz sentido?
+4. Valor final. Cada item precisa de um método que devolva o valor total a pagar: o preço, mais o imposto, mais o frete quando houver. Esse método devolve um valor ou executa uma ação? Qual é o tipo do retorno?
+5. Validações. O sistema deve recusar dados inválidos: preço negativo, peso igual a zero ou negativo, nome vazio. Onde essas verificações devem ficar? No construtor, em um método ou na classe que chama o construtor? O que deve acontecer quando o dado é inválido: o programa para ou avisa e continua?
+Entrega
+Um programa Java com uma classe de teste (main) que:
+	•	crie pelo menos 2 produtos físicos, 1 produto digital e 1 assinatura;
+	•	imprima o valor final de cada item;
+	•	tente criar pelo menos um item com dado inválido e trate o erro sem que o programa quebre;
+	•	mostre, para cada item, a descrição e o valor final.
