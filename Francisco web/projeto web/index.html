@@ -1,113 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Laranjeiras Premium</title>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Padaria Bom Pão</title>
 </head>
 <body>
-    <a href="index.html">
-        <img src="/assets/Logo Premium Laranjeiras.png" alt="Logo Laranjeiras" width="400px">
-    </a>
-
-    <form class="pesquisa">
-        <input type="search" name="q" placeholder="Pesquise no site">
-        <button type = 'submit'>Buscar</button>
-    </form>
-
-    <!-- <h1>Supermercado Laranjeiras Premium</h1>
-    <h2><b>Barato e perto de casa</b></h2> -->
-    <!-- <form>
-        Usuário:<br>
-        <input type="text" name="Usuário">
-        <br>
-        Senha:
-        <br>
-        <input type="password" name="Senha">
-        <br><br>
-        <input type="button" value="Entrar">
-        <br>
-        <hr>
-    </form> -->
-    
-    
-    <div class="bgLinks">
-        <ul class="botoeslinks">
-            <li>
-                <a href='index.html'>Página inicial</a>
-            </li>
-
-            <li>
-                <a href='#'>Faça seu pedido!</a>
-            </li>
-            <!--<img src="C:\Users\Alunoti\Documents\Francisco web\projeto web\assets\blackbg.png" width="1920px" height="1080px"-->
-
-            <li>
-                <a href="PRODUTOSPROMOCAO.html">Ofertas!</a>
-            </li>
-
-            <li>
-                <a href="acougue.html">Açougue!</a>
-            </li>
-
-            <li>
-                <a href="hortifruti.html">Hortifruti!</a>                
-            </li>
-        </ul>
+    <!-- Container com Header inicial incluindo nav e logo da empresa -->
+    <div class="containerNav">
+        <header>
+            <img src="/Assets/logo_bom_pao.webp" alt="logo_bom_pao" width="150px">
+            <nav>
+                <ul>
+                    <li>home | </li>
+                    <li>Quem somos | </li>
+                    <li>Contato | </li>
+                </ul>
+            </nav>            
+        </header>
     </div>
-    
 
-
-    <hr>
-    <div class="bgLinks">
-        <h3>Acesso rápido</h3>
-        <ul class="botoeslinks">
-            <li>
-                <a href="formMaisVendidos.html" target="_blank">
-                Produtos mais comprados!
-                </a>
-            </li>
-    
-            <li>
-                <a href="formPromExclusivas.html" target="_blank">
-                Promoções exclusivas!
-                </a>
-            </li>
-
-            <li>
-                <a href="formPesquisaProduto.html" target="_blank">
-                Pesquise seu produto!
-                </a>
-            </li>   
-        </ul>
+    <!--Container com seção hero(apresentação da empresa)-->
+    <div class="containerHero">
+        <main>
+            <h1>PADARIA BOM PÃO</h1>
+            <p>Produtos de qualidade!</p>
+        </main>
     </div>
-    <hr>
-    <div class="bgLinks">
-        <h3>Contato</h3>
-        <ul class="botoeslinks">       
-            <li>
-                <a href="formSugestoes.html" target="_blank">
-                Duvidas e sugestões
-                </a>
-            </li>
 
-            <li>
-                <a href="formReclamacao.html" target="_blank">
-                Reclame aqui
-                </a>
-            </li>
-
-            <li>
-                <a href="formCurriculos.html" target="_blank">
-                Estamos contratando!
-                </a>
-            </li>
-        </ul>
+    <!--Container com seção de apresentação das informações dos produtos-->
+    <div class="containerProdutos">
+        <section>
+            <!--Cada div é um container de um card do produto-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
     </div>
-    <br>
-    <hr>
-    <h3>Nossa Localização</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.9826217799305!2d-49.2456246!3d-16.7277189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef0670324528b%3A0x767ae73e30f28ebb!2sAlameda%20do%20Contorno%20-%20Goi%C3%A2nia%2C%20GO%2C%2074853-120!5e0!3m2!1spt-BR!2sbr!4v1788479194778!5m2!1spt-BR!2sbr" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">Nossa Localização</iframe>
+
+    <!--Container com avaliações de clientes-->
+    <div class="containerAvaliacao">
+        <section>
+
+        </section>
+    </div>
+
+    <!--Container com seção de contato-->
+    <div class="containerContato">
+        <h3>Entre em contato conosco!</h3>
+        <form action="">
+            <label for="inputNome">Nome</label><br>
+            <input id="inputNome" type="text" placeholder="Digite seu nome completo"><br>
+            <label for="inputAssunto">Assunto</label><br>
+            <input id="inputAssunto" type="text" placeholder="Qual o motivo do seu contato?"><br><br>
+            <textarea name="" id="textarea" rows="10" cols="25" placeholder="Escreva sua mensagem"></textarea>
+        </form>
+    </div>
+
+    <!--container com informações de rede e endereços-->
+    <div class="containerEndereco">
+        <footer>
+
+        </footer>
+    </div>
 </body>
 </html>
