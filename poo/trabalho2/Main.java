@@ -72,7 +72,6 @@ class Funcionario extends Pessoa implements Reembolso{
     }
 }
 
-
 class Contrato{
     public String Equipamento;
     public double valorEquipamento;
@@ -89,10 +88,6 @@ class Contrato{
 
 }
     
-
-
-
-
 public class Main{
     public static void main(String args[]){
         Funcionario f1 = new Funcionario("Igo", "Almoxarifado", 5000.00);
