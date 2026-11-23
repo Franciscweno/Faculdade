@@ -1,0 +1,8 @@
+22/11 - gerar imagens que serão usadas no background dos containers
+	e aplicá-las no projeto
+
+23/11 - produzir o conteúdo dos cards e estilizar o formulário de contatos
+
+24/11 - adicionar animações CSS fluídas no projeto e gerar eventos necessários utilizando javascript
+
+25/11 - deploy ou postagem do projeto
