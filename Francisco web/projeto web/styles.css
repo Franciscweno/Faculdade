@@ -68,7 +68,7 @@ li:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: url("/Assets/bom-pao-hero-bg.webp") center bottom / auto 100% no-repeat #ffecdf;
+    background: url("./Assets/bom-pao-hero-bg.webp") center bottom / auto 100% no-repeat #ffecdf;
     width: 100%;
     height: 600px;
 }
