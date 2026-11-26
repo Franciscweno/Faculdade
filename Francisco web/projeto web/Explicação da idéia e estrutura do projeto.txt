@@ -1,0 +1,16 @@
+Landing Page da padaria Bom Pão, a página contém:
+
+Sessão de apresentação.
+
+Sessão de produtos vendidos com interatividade para calcular valor.
+
+Sessão de avaliação (as avaliações foram geradas com IA) cada uma é uma imagem.
+
+Sessão de formulário para contato com validação de entrada(restrição de numero no campo de nome, preenchimento de todos os campos para poder enviar. O envio da mensagem é fictício).
+
+Sessão com endereço, numero(tomara que não tenha ninguém com esse número no whatsapp kkk) para contato e email ficticios, incluindo redes sociais. Usei atributos do html que permitem enviar email, ou telefonar clicando diretamente nos textos respectivos
+
+Todos os botões e cards possuem animações hover com scale e/ou transform
+
+Cada sessão é um container que usa como background uma imagem gerada com IA, minha ideia foi tentar conectar todos com uma cena interativa para uma experiência mais agradável ao usuário (é possível ver que tive dificuldade para conectar a imagem do primeiro container com a imagem do segundo, os cabos do trigo parecem estar quebrados 
+no limite entre um container e outro).

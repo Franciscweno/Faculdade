@@ -1,7 +1,12 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -9,12 +14,13 @@ body{
 }
 
 .containerNav{
-    background:linear-gradient(to right, rgb(255, 227, 190) 0%, #ffecdf 25%, #ffecdf 50%, rgb(250, 234, 213) 75%, rgb(250, 234, 213) 100%);
+    background:linear-gradient(to right, rgba(255, 227, 190, 0.486) 0%, #ffecdf77 25%, #ffecdf 50%, rgb(250, 234, 213) 75%, rgba(250, 234, 213, 0.356) 100%);
     height: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0 0 0 0;
 }
+
 
 header{
     display: flex;
@@ -38,9 +44,23 @@ ul{
 }
 
 li{
-    background: linear-gradient(170deg, #ffd9a7 50%, #ffb889);
-    padding: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(170deg, #ffd9a770 50%, #ffb889);
+    padding: 15px 20px 15px 15px;
     border-radius: 50px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;    
+}
+
+li:hover{
+    transform: scale(1.1);
 }
 
 .containerHero{
@@ -68,7 +88,12 @@ li{
     height: 300px;
     margin: 0 auto;
     border-radius: 50px;
-    border-color: #312116; 
+    border-color: #312116;
+    transition: background-color 0.3s ease;
+}
+
+.titulo:hover{
+    background-color: #ffd9a77e;
 }
 
 .titulo h1{
@@ -103,19 +128,137 @@ li{
     grid-template-columns: repeat(5, 1fr);
     gap: 25px;
     padding: 170px 40px 110px;
-    background:url("/Assets/bom-pao-produtos-bg.webp") center bottom / max(100%, 1920px) 100% no-repeat;
+    background:url("./Assets/bom-pao-produtos-bg.webp") center bottom / max(100%, 1920px) 100% no-repeat;
     width: 100%;
     min-height: 800px;
 }
 
 .sectionProdutos div{
-    background: linear-gradient(0deg, #ffe5b6 40%, #b36220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, #fff1d731 40%, #fcd2af31);
     width: 100%;
     height: 350px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 30px;
     border-color: #5a3319;
-    border: 3px solid #5a3319;
+    border: 0.5px solid #5a3319;
+    transform: translateY(0);
+    transition: background-color 1s ease, transform 0.3s ease;
+}
+
+.sectionProdutos div:hover{
+    transform: translateY(-4px);
+    background: linear-gradient(0deg, #fff1d754 30%, #fcd2af46);
+}
+
+.sectionProdutos img{
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
+.sectionProdutos label{   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #4a2c18;
+}
+
+.sectionProdutos .labelPreco{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #4a2c18;
+}
+
+.sectionProdutos .labelCalculo{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    text-align: center;
+    font-size: 10px; 
+}
+
+.botaoPedido{
+    grid-column: 1 / -1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 24px;
+    width: fit-content;
+    padding: 8px 16px;
+    margin: 25px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #ffecdf5e;
+    border-radius: 20px;
+    border: none;
+    background-color: #00571d;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+
+
+.botaoPedido:hover{
+    transform: scale(1.1);
+    color: #fcf7f5;
+}
+
+.botaoPedido img{
+    position: static;
+    transform: none;
+    margin: 0;
+    width: 28px;
+    height: auto;
+}
+
+.formCalcProd{
+    display: flex;
+    flex-direction: column;    
+    text-align: center;
+    font-size: 10px;
+    border-radius: 20px;
+    border-color: #ffd9a7;
+    border-width: 1px;   
+}
+
+.formCalcProd input{
+    text-align: center;
+    font-size: 10px;
+    border-radius: 20px;
+    border-color: #ffd9a7;
+    border-width: 1px;
+    height: 25px;    
+}
+
+.formCalcProd button{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #005018;
+    height: 25px;      
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.formCalcProd button:hover{
+    transform: scale(1.05);
+}
+
+
+#labelResultado{
+    padding-top: 40px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #4a2c18;
 }
 
 .containerAvaliacao{
@@ -143,13 +286,14 @@ li{
     justify-content: center;
     background-color: #312116;
     width: 100%;
-    height: 500px;
+    height:600px;
 }
 
 
 .containerContato input{
     width: 250px;
     height: 25px;
+    border: none;
     border-radius: 10px;
     border-color: #312116;
     background-color: #796a6046;
@@ -158,21 +302,30 @@ li{
 }
 
 .containerContato textarea{
+    text-align: center;
     width: 600px;
     height: 80px;
+    border: none;
     border-radius: 10px;
     border-color: #312116;        
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     background-color: #796a6046;
 }
 
-.containerContato label{
+.containerContato .labelcontatonome{
     display: inline-block;
     width: 80px;
     margin-left: 110px;
     color: #f0d57d;
 
 
+}
+
+.containerContato .labelMsg{
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 
@@ -184,15 +337,60 @@ li{
 
 }
 
+
+.containerContato button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 45%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #693719;
+    width: 75px;
+    height: 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.containerContato button:hover{
+    transform: scale(1.1);
+    background-color: #743d1b;
+}
+
 .containerEndereco{
-    background-color: #c24e00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: #ffffff;
     width: 100%;
     height: 300px;
 }
 
+.containerEndereco a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
 
+.containerEndereco img{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px;
+    transition: transform 0.3s ease;
 
+}
 
+.containerEndereco img:hover{
+    transform: scale(1.2);
+}
 
 /*aqui ficaram os keyframes das animações*/
 

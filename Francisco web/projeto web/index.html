@@ -16,9 +16,10 @@
             <img src="/Assets/logo_bom_pao.webp" alt="logo_bom_pao" width="200px">
             <nav>
                 <ul>
-                    <li>home</li>
-                    <li>Quem somos</li>
-                    <li>Contato</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Quem somos</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>            
         </header>
@@ -36,21 +37,134 @@
     </div>
 
     <!--Container com seção de apresentação das informações dos produtos-->
-    <section class="sectionProdutos">
+    <section id="produtos" class="sectionProdutos">
         <!--Cada div é um container de um card do produto-->
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div><!--pao frances-->
+            <img src="./Assets/pao_frances.webp" alt="" width="100">
+            <label>Pão francês</label>
+            <label class="labelPreco">R$: 0,45un</label>
+            <form class="formCalcProd">
+                <label class="labelCalculo" for="inputCalculo">Calcule o valor do seu produto!</label>
+                <input id="inputCalculoPao" type="number" min="0" max="250" placeholder="Quantos pães?">
+                <button id="botaoCalculoPao" type="button">Calcular</button>
+                <label id="labelResultadoPao"></label>
+            </form>
+        </div>
+
+        <div><!--pao de queijo-->
+            <img src="./Assets/pao_de_queijo.webp" alt="" width="100">
+            <label>Pão de Queijo</label>            
+            <label class="labelPreco">R$: 0,95un</label>
+            <form class="formCalcProd">
+                <label class="labelCalculo" for="inputCalculo">Calcule o valor do seu produto!</label>
+                <input id="inputCalculoPaoqjo" type="number" min="0" max="250" placeholder="Quantos pães de Quejo?">
+                <button id="botaoCalculoPaoqjo" type="button">Calcular</button>
+                <label id="labelResultadoPaoqjo"></label>
+            </form>            
+        </div>
+
+        <div><!--pao gergelim-->
+            <img src="./Assets/pao_com_gergelim.webp" alt="" width="100">
+            <label>Pão com Gergelim</label>            
+            <label class="labelPreco">R$: 0,80un</label>
+            <form class="formCalcProd">
+                <label class="labelCalculo" for="inputCalculo">Calcule o valor do seu produto!</label>
+                <input id="inputCalculoPaogerg" type="number" min="0" max="250"  placeholder="Quantos pães?">
+                <button id="botaoCalculoPaogerg" type="button">Calcular</button>
+                <label id="labelResultadoPaogerg"></label>
+            </form>            
+        </div>
+
+        <div><!--Pastel-->
+            <img src="./Assets/pasteis.webp" alt="" width="100">
+            <label>Pasteis</label>            
+            <label class="labelPreco">R$: 3,98un</label>
+            <form class="formCalcProd">
+                <label class="labelCalculo" for="inputCalculo">Calcule o valor do seu produto!</label>
+                <input id="inputCalculoPastel" type="number" min="0" max="250"  placeholder="Quantos Pasteis">
+                <button id="botaoCalculoPastel" type="button">Calcular</button>
+                <label id="labelResultadoPastel"></label>
+            </form>            
+        </div>
+
+        <div><!--salgados-->
+            <img src="./Assets/salgados_diversos.webp" alt="" width="100">
+            <label>Salgados Diversos</label>            
+            <label class="labelPreco">R$: 1,00un</label>
+            <form class="formCalcProd">
+                <label class="labelCalculo" for="inputCalculo">Calcule o valor do seu produto!</label>
+                <input id="inputCalculoSalg" type="number" min="0" max="250"  placeholder="Quantos Salgados?">
+                <button id="botaoCalculoSalg" type="button">Calcular</button>
+                <label id="labelResultadoSalg"></label>
+            </form>            
+        </div>
+
+        <div><!--biscoito de queijo-->
+            <img src="./Assets/biscoito_de_queijo.webp" alt="" width="100">
+            <label>Biscoito de queijo</label>            
+            <label class="labelPreco">R$: 1,15un</label>
+            <form class="formCalcProd">
+                <label class="labelCalculo" for="inputCalculo">Calcule o valor do seu produto!</label>
+                <input id="inputCalculobiscqjo" type="number" min="0" max="250"  placeholder="Quantos biscoitos de Queijo?">
+                <button id="botaoCalculobiscqjo" type="button">Calcular</button>
+                <label id="labelResultadobiscqjo"></label>
+            </form>            
+        </div>
+
+        <div><!--MOrtadela-->
+            <img src="./Assets/mortadela.webp" alt="" width="100">
+            <label>Mortadela</label>            
+            <label class="labelPreco">R$: 35,98kg</label>
+            <form class="formCalcProd">
+                <label class="labelCalculo" for="inputCalculo">Calcule o valor do seu produto!</label>
+                <input id="inputCalculoMort" type="number" min="0" max="250"  placeholder="Quantas gramas?">
+                <button id="botaoCalculoMort" type="button">Calcular</button>
+                <label id="labelResultadoMort"></label>
+            </form>            
+        </div>
+
+        <div><!--mussarela-->
+            <img src="./Assets/mussarela.webp" alt="" width="100">
+            <label>Mussarela</label>            
+            <label class="labelPreco">R$: 45,90kg</label>
+            <form class="formCalcProd">
+                <label class="labelCalculo" for="inputCalculo">Calcule o valor do seu produto!</label>
+                <input id="inputCalculoMuss" type="number" min="0" max="250"  placeholder="Quantas gramas?">
+                <button id="botaoCalculoMuss" type="button">Calcular</button>
+                <label id="labelResultadoMuss"></label>
+            </form>            
+        </div>
+
+        <div><!--presunto-->
+            <img src="./Assets/presunto.webp" alt="" width="100">
+            <label>Presunto</label>            
+            <label class="labelPreco">R$: 42,90kg</label>
+            <form class="formCalcProd">
+                <label class="labelCalculo" for="inputCalculo">Calcule o valor do seu produto!</label>
+                <input id="inputCalculoPres" type="number" min="0" max="250"  placeholder="Quantas gramas?">
+                <button id="botaoCalculoPres" type="button">Calcular</button>
+                <label id="labelResultadoPres"></label>
+            </form>            
+        </div>
+
+        <div><!--suco-->
+            <img src="./Assets/suco_vidaboa_1l.webp" alt="" width="50">
+            <label>Suco Vida boa 1L</label>            
+            <label class="labelPreco">R$: 11,99un</label>
+            <form class="formCalcProd">
+                <label class="labelCalculo" for="inputCalculo">Calcule o valor do seu produto!</label>
+                <input id="inputCalculoSuco" type="number" min="0" max="250"  placeholder="Quantas unidades?">
+                <button id="botaoCalculoSuco" type="button">Calcular</button>
+                <label id="labelResultadoSuco"></label>
+            </form>            
+        </div>
+
+        <a class="botaoPedido" href="https://w.app/padariabompao" target="_blank">
+            <img src="./Assets/whatsapp-logo.png" alt="logo_whatsapp" width="50">Peça pelo WhatsApp!
+        </a>
     </section>
-
-
+    
+    
     <!--Container com avaliações de clientes-->
     <div class="containerAvaliacao">
         <section>
@@ -58,19 +172,21 @@
             <img src="/Assets/BomPao_depoimento_AnaPereira.webp" width="450" alt="depoimento">
             <img src="/Assets/BomPao_depoimento_CarlosAlmeida.webp" width="450" alt="depoimento">
             <img src="/Assets/BomPao_depoimento_FernandaLima.webp" width="450" alt="depoimento">
-
+            
         </section>
     </div>
-
+    
     <!--Container com seção de contato-->
-    <div class="containerContato">
+    <div id="contato" class="containerContato">
         <h3>Entre em contato conosco!</h3>
         <form action="">
-            <label for="inputNome">Nome</label>
+            <label class="labelcontatonome" for="inputNome">Nome</label>
             <input id="inputNome" type="text" placeholder="Digite seu nome completo"><br>
-            <label for="inputAssunto">Assunto</label>
+            <label class="labelcontatonome" for="inputAssunto">Assunto</label>
             <input id="inputAssunto" type="text" placeholder="Qual o motivo do seu contato?"><br><br>
             <textarea name="" id="textarea" rows="10" cols="25" placeholder="Escreva sua mensagem"></textarea>
+            <label class="labelMsg" id="msgEnv"></label>
+            <button id="botaoContato" type="button">Enviar</button>
         </form>
     </div>
 
@@ -81,19 +197,20 @@
                 Av. das Acácias, 1420 – Sala 304, Jardim Primavera<br>
                 Goiânia – GO, CEP: 01234-567<br>
                 Telefone: <a href="tel:+5562987654321">(62) 98765-4321</a><br>
-                E-mail: <a href="mailto:contato@padariabompao.com.br">contato@padariabompao.com.br</a>
+                E-mail: <a href="mailto:contato@padariabompao.com.br">contato@padariabompao.com.br</a><br>
+                <a href="https://www.instagram.com/padariabom.pao/">
+                    <img src="./Assets/instagram.png" width="50px" alt="logo_instagram">
+                </a>
+
+                <a href="https://w.app/padariabompao"> 
+                    <img src="./Assets/whatsapp-logo.png" width="50px" alt="logo_instagram">
+                </a>
+                
+                <a href="tel:+5562987654321"> 
+                    <img src="./Assets/phone.png" width="50px" alt="logo_instagram">
+                </a>
         </footer>
-        <a href="https://www.instagram.com/padariabom.pao/"> 
-            <img src="/Assets/instagram.png" width="50px" alt="logo_instagram">
-        </a>
-
-        <a href="https://w.app/padariabompao"> 
-            <img src="/Assets/whatsapp-logo.png" width="50px" alt="logo_instagram">
-        </a>
-
-        <a href="tel:+5562987654321"> 
-            <img src="/Assets/phone.png" width="50px" alt="logo_instagram">
-        </a>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
